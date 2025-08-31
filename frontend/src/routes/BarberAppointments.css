@@ -1,0 +1,73 @@
+.barber-container {
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.barber-container h2 {
+  margin: 1rem 0;
+  font-size: 1.8rem;
+}
+
+.barber-container button {
+margin: 0 2rem;
+margin-bottom: 2rem;
+ 
+}
+
+.barber-container button {
+  background-color: #1F2A38;
+  color: white;
+  border: 1px solid #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 1.5rem;
+  transition: background-color 0.3s ease;
+}
+
+.barber-container button:hover {
+  background-color: #273446;
+}
+
+.barber-appointments {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  
+}
+
+.barber-appointment-list {
+flex: 1 1 280px;
+max-width: 300px;
+}
+
+.barber-appointment-info {
+  background-color: #1F2A38;
+  color: #fff;
+  padding: 0.6rem 1rem;
+  border-radius: 10px;
+  line-height: 1.6rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.barber-appointment-info p {
+  margin: 0.3rem 0;
+
+}
+
+.fa-whatsapp {
+  color: #fff;
+  font-size: 1.5rem;
+  margin-left: 0.5rem;
+  transition: color 0.3s ease;
+}
+
+.fa-whatsapp:hover {
+  color: #25D366;
+}
+
+.no-barber-appointments {
+  font-size: 1.2rem;
+  color: #ccc;
+  padding: 1rem;
+}

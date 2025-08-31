@@ -1,0 +1,54 @@
+.book-container {
+  max-width: 500px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  text-align: left;
+
+ 
+}
+
+
+.control-form {
+  display: flex;
+  flex-direction: column;
+    gap: 0.5rem;
+    margin: 1rem;
+}
+
+.control-form label {
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.control-form input {
+  padding: 0.75rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+
+}
+
+.control-form input:focus {
+  
+  outline: none;
+}
+
+.edit-btn {
+  padding: 0.75rem 1.5rem;
+  background-color: #1F2A38;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition:  0.3s;
+color: #fff;
+}
+
+.edit-btn:hover {
+ opacity: 0.8;
+}
+
