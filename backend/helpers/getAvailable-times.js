@@ -21,7 +21,7 @@ const getAvailableTimes = async (date) => {
    if(dateObj.getDay() === 6 || dateObj.getDay() === 0) {
   return [];
  }
-if(dateObj.getDay() === 5) {
+if(dateObj.getDay() === 6) {
     availableTimes = ["8:00", "9:00", "10:00", "11:00", "12:00"]
  } else {
   availableTimes = [

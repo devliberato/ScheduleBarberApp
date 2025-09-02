@@ -100,7 +100,9 @@ module.exports = class UserController {
   static async login(req, res) {
     const { email, password } = req.body;
 
-    if (!email) {
+    try {
+
+      if (!email) {
       return res
         .status(400)
         .json({ message: "Insira o e-mail para a realização do login!" });
@@ -123,7 +125,14 @@ module.exports = class UserController {
         .json({ message: "E-mail ou senha inválidos!" });
     }
 
-    await createToken(user, req, res);
+     await createToken(user, req, res);
+      
+    } catch (error) {
+      res.status(500).json({message: "Ocorreu um erro", error})
+  
+    }
+
+   
   }
 
   static async checkUser(req, res) {
