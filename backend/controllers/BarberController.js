@@ -25,13 +25,17 @@ if(!password) {
 }
 
 const barberExists = await Barber.findOne({raw: true, where: {email: email}});
+
+if(!barberExists) {
+    return res.status(400).json({message: "E-mail ou senha inválidas"})
+}
+
+
 if(barberExists.password !== password) {
     return res.status(400).json({message: "E-mail ou senha inválidas"})
 }
 
-if(!barberExists) {
-    return res.status(400).json({message: "Este barbeiro não existe!"})
-}
+
 
 
 await createToken(barberExists, req, res);

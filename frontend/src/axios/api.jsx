@@ -5,3 +5,7 @@ const api = axios.create({
 })
 
 export default api;
+
+// "https://schedulebarberapp.onrender.com/"
+
+// "http://localhost:5000/"

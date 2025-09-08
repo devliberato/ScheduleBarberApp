@@ -18,7 +18,7 @@ const getAvailableTimes = async (date) => {
   const dateObj = new Date(date);
   dateObj.setUTCHours(0, 0, 0, 0)
 
-   if(dateObj.getDay() === 6 || dateObj.getDay() === 0) {
+   if(dateObj.getDay() === 0 || dateObj.getDay() === 1) {
   return [];
  }
 if(dateObj.getDay() === 6) {

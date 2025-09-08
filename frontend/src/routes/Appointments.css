@@ -92,4 +92,44 @@ opacity: 0.8;
 .delete-btn {
   padding: 10px 20px
 }
+
+@media (max-width: 500px) {
+   .edit-btn-book,
+.delete-btn {
+  padding: 5px 15px
+}
+
+ .appointment-list {
+    padding: 30px;
+    width: 85%;
+    margin: 0 auto;
+    justify-content: center;
+    align-content: center;
+    gap: 1.5rem
+  }
+
+  .appointment-info {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 400px) {
+   .edit-btn-book,
+.delete-btn {
+  padding: 2px 12px
+}
+
+ .appointment-list {
+    padding: 30px;
+    width: 85%;
+    margin: 0 auto;
+    justify-content: center;
+    align-content: center;
+    gap: 1.2rem
+  }
+
+  .appointment-info {
+    font-size: 0.6rem;
+  }
+}
 }

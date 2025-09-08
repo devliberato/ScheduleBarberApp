@@ -16,6 +16,8 @@ import EditBook from './routes/EditBook.jsx';
 
 //middleware
 import PrivateRoutes from './middleWare/PrivateRoutes.jsx';
+
+
 import ForgotPassword from './routes/ForgotPassword.jsx';
 import ResetPassword from './routes/ResetPassword.jsx';
 import BarberLogin from './routes/BarberLogin.jsx';
@@ -82,7 +84,7 @@ const router = createBrowserRouter([
 createRoot(document.getElementById('root')).render(
   <StrictMode>
   <UserContextProvider>
-    <RouterProvider router={router}/>
+    <RouterProvider router={router} basename="/ScheduleBarberApp"/>
   </UserContextProvider>
   </StrictMode>,
 )

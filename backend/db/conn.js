@@ -3,6 +3,7 @@ require("dotenv").config();
 
 
 const sequelize = new Sequelize(process.env.MYSQL_PUBLIC_URL, {
+
   dialect: "mysql",
 });
 
@@ -13,3 +14,4 @@ sequelize.authenticate().then(() => {
 });
 
 module.exports = sequelize;
+
