@@ -11,6 +11,7 @@ const [phone, setPhone] = useState("");
 const [password, setPassword] = useState("");
 const [confirmpassword, setConfirmpassword] = useState("");
 const [showPassword, setShowPassword] = useState(false);
+const [loading, setLoading] = useState(false);
 
 const token = localStorage.getItem("token")
 
@@ -103,7 +104,7 @@ if(response) {
           
         </div>
         
-        <input type="submit" value="Editar Conta" className="btn"/>
+        <input type="submit" disabled={loading} value={loading ? "Editando conta..." : "Editar"} className="btn"/>
       </form>
       <div className="showpassword-container">
         <input type="checkbox" className="showpassword-btn" checked={showPassword} onChange={() => setShowPassword((prev) => !prev)}/>
