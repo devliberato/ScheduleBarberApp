@@ -61,14 +61,16 @@ const handleSubmitEdit = async(e) => {
     
   }
 )
-console.log(response);
+setLoading(true);
+
 if(response) {
   toast.success(response.data.message);
-
+setLoading(false);
 }
   
  } catch (error) {
   toast.error(error.response.data.message);
+  setLoading(false);
  }
 
 }
