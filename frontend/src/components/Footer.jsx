@@ -4,7 +4,7 @@ import "./Footer.css"
 const Footer = () => {
   return (
     <footer>
-       <p>&copy; 2025 Barbearia. Todos os direitos reservados by Matheus Liberato.</p>
+       <p>&copy; 2025 Barbearia. Todos os direitos reservados desenvolvido por Matheus Liberato.</p>
     </footer>
   )
 }

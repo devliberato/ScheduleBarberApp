@@ -23,9 +23,22 @@ const getAllBarberAppointments = async() => {
         }
     })
     const data = await response.data;
-    console.log(data);
-   setBarberAppointments(data.appointments)
-   setOriginalAppointments(data.appointments);
+   
+      const today = new Date()
+    today.setUTCHours(0, 0, 0, 0);
+
+  const currentAppointments = data.appointments.filter((data) => {
+
+    const currentOrAwayDate = new Date(data.date);
+    currentOrAwayDate.setUTCHours(0, 0, 0, 0);
+    if(currentOrAwayDate.getTime() >= today.getTime()) {
+      return true;
+    }
+  })
+
+
+   setBarberAppointments(currentAppointments)
+   setOriginalAppointments(currentAppointments);
   toast.success(response.data.message);
   
         

@@ -84,7 +84,7 @@ const router = createBrowserRouter([
 createRoot(document.getElementById('root')).render(
   <StrictMode>
   <UserContextProvider>
-    <RouterProvider router={router} basename="/ScheduleBarberApp"/>
+    <RouterProvider router={router} />
   </UserContextProvider>
   </StrictMode>,
 )

@@ -2,9 +2,12 @@
   "name": "backend",
   "version": "1.0.0",
   "main": "index.js",
+    "homepage": "https://devliberato.github.io/frontend",
   "scripts": {
     "test": "jest",
-    "start": "nodemon ./index.js localhost 5000"
+    "start": "nodemon ./index.js localhost 5000",
+    "pre deploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "keywords": [],
   "author": "",
