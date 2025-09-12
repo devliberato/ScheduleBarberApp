@@ -50,6 +50,6 @@ static async getAllAppointments(req, res) {
     if(!appointments) {
         return res.status(400).json({message: "Sem pessoas agendadas!"})
     }
-    res.status(200).json({message: "Clientes agendados"})
+    res.status(200).json({message: "Clientes agendados", appointments})
 }
 }
