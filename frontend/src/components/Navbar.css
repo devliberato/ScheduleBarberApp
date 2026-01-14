@@ -27,7 +27,7 @@
   color: #AAB0B6;
 }
 
-/* Estilo para a versão mobile */
+
 @media (max-width: 660px) {
   .navbar ul {
     display: none; 

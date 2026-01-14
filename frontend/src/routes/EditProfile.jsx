@@ -14,8 +14,6 @@ const [showPassword, setShowPassword] = useState(false);
 const [loading, setLoading] = useState(false);
 
 const token = localStorage.getItem("token")
-
-useEffect(() => {
   const getUser = async () => {
 
   try {
@@ -26,7 +24,6 @@ useEffect(() => {
         
       });
       const data = await response.data;
-      console.log(data);
       setName(data.name);
       setEmail(data.email);
       setPhone(data.phone);
@@ -37,6 +34,8 @@ useEffect(() => {
     
   }
 }
+
+useEffect(() => {
 
 getUser();
 
